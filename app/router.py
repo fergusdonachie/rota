@@ -47,7 +47,7 @@ class Router:
                 else:
                     type_name, name = "str", inner
                 if type_name == "int":
-                    regex_parts.append(f"(?P<{name}>\d+)")
+                    regex_parts.append(rf"(?P<{name}>\d+)")
                 else:
                     regex_parts.append(f"(?P<{name}>[^/]+)")
             else:
